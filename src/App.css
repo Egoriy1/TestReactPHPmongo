@@ -1,10 +1,13 @@
-.App {
+.title {
   text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +17,158 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #404960;
+  height: 42px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
+  margin-bottom: 40px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.flex1 {
+  display: flex;
+  padding-left: 90px;
+}
+.flex2 {
+  display: flex;
+  padding-right: 90px;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+.title-header-two {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+.svg-exit {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.menu-head {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 240%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  color: #404960;
+}
+
+.formBox {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.menu-item {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 240%;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  color: #404960;
+}
+
+.input {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 14px 0 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+.rounded {
+  counter-reset: li;
+  list-style: none;
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #8FD4C1;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
 }
 
 @keyframes App-logo-spin {
